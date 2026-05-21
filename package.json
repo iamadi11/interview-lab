@@ -20,7 +20,10 @@
     "interview:reset": "node scripts/interview/reset.js",
     "interview:timer": "node scripts/interview/timer.js",
     "setup": "node scripts/setup/index.js",
-    "bootstrap": "node scripts/bootstrap/index.js"
+    "bootstrap": "node scripts/bootstrap/index.js",
+    "react-round": "pnpm --filter react-machine-round dev",
+    "react-round:test": "pnpm --filter react-machine-round test",
+    "react-round:storybook": "pnpm --filter react-machine-round storybook"
   },
   "devDependencies": {
     "turbo": "^2.3.3",
