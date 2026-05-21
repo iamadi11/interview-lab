@@ -1,0 +1,14 @@
+{
+  "name": "@interview-lab/js-playground",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 3004",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  }
+}

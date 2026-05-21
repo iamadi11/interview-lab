@@ -1,0 +1,59 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+dist
+build
+.next
+.nuxt
+out
+.output
+.vercel
+.turbo
+
+# Env files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.idea
+
+# Testing
+coverage
+.nyc_output
+playwright-report
+test-results
+
+# Python
+__pycache__
+*.py[cod]
+.venv
+venv
+*.egg-info
+.pytest_cache
+
+# OS
+Thumbs.db
+
+# Turbo
+.turbo
+
+# Interview session data (auto-generated)
+.interview-session

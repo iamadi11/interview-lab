@@ -1,0 +1,35 @@
+{
+  "name": "interview-lab",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Interview Machine Coding Workspace — local-first, AI-assisted, fast-bootstrapped",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\" --ignore-path .gitignore",
+    "interview": "pnpm run interview:start",
+    "interview:start": "node scripts/interview/start.js",
+    "interview:react": "node scripts/interview/start.js --env react",
+    "interview:next": "node scripts/interview/start.js --env next",
+    "interview:node": "node scripts/interview/start.js --env node",
+    "interview:python": "node scripts/interview/start.js --env python",
+    "interview:reset": "node scripts/interview/reset.js",
+    "interview:timer": "node scripts/interview/timer.js",
+    "setup": "node scripts/setup/index.js",
+    "bootstrap": "node scripts/bootstrap/index.js"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@10.28.0"
+}

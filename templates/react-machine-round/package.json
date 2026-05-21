@@ -1,0 +1,25 @@
+{
+  "name": "react-machine-round",
+  "version": "0.0.1",
+  "private": true,
+  "description": "React machine coding round starter — TypeScript, Vite, Zustand, React Query, Tailwind, Framer Motion",
+  "scripts": {
+    "dev": "vite --port 3100",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "storybook": "storybook dev -p 6006",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}

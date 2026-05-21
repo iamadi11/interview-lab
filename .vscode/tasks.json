@@ -1,0 +1,85 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Interview: Start All",
+      "type": "shell",
+      "command": "pnpm interview",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Interview: React Round",
+      "type": "shell",
+      "command": "pnpm interview:react",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Interview: Next Round",
+      "type": "shell",
+      "command": "pnpm interview:next",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Interview: Node Round",
+      "type": "shell",
+      "command": "pnpm interview:node",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Interview: Python Round",
+      "type": "shell",
+      "command": "pnpm interview:python",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Timer: 30 min",
+      "type": "shell",
+      "command": "node scripts/interview/timer.js --minutes 30",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Timer: 60 min",
+      "type": "shell",
+      "command": "node scripts/interview/timer.js --minutes 60",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Bootstrap",
+      "type": "shell",
+      "command": "node scripts/bootstrap/index.js",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Reset Workspace",
+      "type": "shell",
+      "command": "pnpm interview:reset",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build All",
+      "type": "shell",
+      "command": "pnpm build",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "Typecheck All",
+      "type": "shell",
+      "command": "pnpm typecheck",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": ["$tsc"]
+    }
+  ]
+}

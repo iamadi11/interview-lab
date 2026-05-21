@@ -1,0 +1,22 @@
+{
+  "name": "@interview-lab/dashboard",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

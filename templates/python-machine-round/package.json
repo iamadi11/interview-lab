@@ -1,0 +1,12 @@
+{
+  "name": "python-machine-round",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Python machine coding round starter — FastAPI, Pydantic, pytest",
+  "scripts": {
+    "dev": "python -m uvicorn main:app --reload --port 8100",
+    "test": "python -m pytest",
+    "setup": "python -m venv .venv && .venv/bin/pip install -r requirements.txt",
+    "clean": "rm -rf __pycache__ .venv .pytest_cache"
+  }
+}

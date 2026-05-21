@@ -1,0 +1,19 @@
+{
+  "name": "node-machine-round",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Node.js machine coding round starter — Express, TypeScript, Zod, Repository pattern",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

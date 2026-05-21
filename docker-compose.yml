@@ -1,0 +1,31 @@
+services:
+  workspace:
+    build:
+      context: .
+      target: dev
+    volumes:
+      - .:/workspace
+      - /workspace/node_modules
+    ports:
+      - "3000:3000"   # Dashboard
+      - "3001:3001"   # React Playground
+      - "3002:3002"   # Next Playground
+      - "3003:3003"   # Node Playground
+      - "3004:3004"   # JS Playground
+      - "3005:3005"   # Design System Lab
+      - "8000:8000"   # Python Playground
+    environment:
+      - NODE_ENV=development
+    command: pnpm interview
+
+  python-lab:
+    image: python:3.13-slim
+    working_dir: /workspace
+    volumes:
+      - ./apps/python-playground:/workspace
+    ports:
+      - "8001:8000"
+    command: >
+      sh -c "pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+    profiles:
+      - python

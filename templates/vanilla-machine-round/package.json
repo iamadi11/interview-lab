@@ -1,0 +1,16 @@
+{
+  "name": "vanilla-machine-round",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Vanilla JS/TS machine coding round starter — no framework, Vite, DOM APIs",
+  "scripts": {
+    "dev": "vite --port 3300",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5",
+    "typescript": "^5.7.2"
+  }
+}

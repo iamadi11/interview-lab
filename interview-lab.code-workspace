@@ -1,0 +1,34 @@
+{
+  "folders": [
+    { "name": "Root", "path": "." },
+    { "name": "Dashboard", "path": "apps/dashboard" },
+    { "name": "React Playground", "path": "apps/react-playground" },
+    { "name": "Next Playground", "path": "apps/next-playground" },
+    { "name": "Node Playground", "path": "apps/node-playground" },
+    { "name": "JS Playground", "path": "apps/js-playground" },
+    { "name": "Python Playground", "path": "apps/python-playground" },
+    { "name": "Design System Lab", "path": "apps/design-system-lab" },
+    { "name": "Backend Design Lab", "path": "apps/backend-design-lab" },
+    { "name": "UI Package", "path": "packages/ui" },
+    { "name": "Tokens Package", "path": "packages/tokens" },
+    { "name": "Hooks Package", "path": "packages/interview-hooks" },
+    { "name": "Utils Package", "path": "packages/interview-utils" },
+    { "name": "Generators Package", "path": "packages/interview-generators" },
+    { "name": "AI Skills Package", "path": "packages/ai-skills" },
+    { "name": "Shared Types", "path": "packages/shared-types" },
+    { "name": "Templates", "path": "templates" }
+  ],
+  "settings": {
+    "typescript.tsdk": "Root/node_modules/typescript/lib"
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss",
+      "github.copilot",
+      "github.copilot-chat",
+      "anthropics.claude-code"
+    ]
+  }
+}

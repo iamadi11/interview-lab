@@ -1,0 +1,52 @@
+# Cursor Rules — Interview Lab
+
+## Project context
+This is an interview-first local development environment.
+Code quality must be "explainable in 30 seconds to a senior engineer".
+
+## Code style
+- TypeScript everywhere (strict mode)
+- No `any` types — use `unknown` + type guards if needed
+- Prefer functional components and hooks over class components
+- Keep components under 150 lines; extract if longer
+- Use named exports (not default exports) for components and hooks
+- Co-locate styles with components (Tailwind classes inline or cva)
+
+## Interview-specific rules
+- Every utility function must have a JSDoc comment explaining WHY it exists
+- Every custom hook must have a one-line usage comment at the top
+- Prefer simple, readable code over clever optimizations
+- Avoid premature abstraction — write it twice before extracting
+- No external API calls in demos — use mock data / fixtures
+
+## File naming
+- Components: PascalCase.tsx
+- Hooks: camelCase.ts (must start with `use`)
+- Utils: camelCase.ts
+- Types: camelCase.types.ts or shared-types package
+- Tests: [name].test.ts or [name].spec.ts
+
+## Import order (auto-sorted by Prettier)
+1. Node built-ins
+2. External packages
+3. Workspace packages (@interview-lab/*)
+4. Relative imports
+
+## AI assistance rules
+- When generating components, always include TypeScript props interface
+- When generating hooks, always include return type annotation
+- When generating API routes, always include error handling
+- Prefer composition over inheritance
+- When in doubt about complexity, ask: "can I explain this in an interview?"
+
+## Performance guidelines
+- Use React.memo() only when profiling proves it's needed
+- Avoid useEffect for derived state — compute inline
+- Prefer CSS transitions over JS animations for simple cases
+- Use Framer Motion for complex animations (Phase 2+)
+
+## Testing guidelines
+- Unit test: pure functions and hooks (vitest)
+- Component test: user interactions only (React Testing Library)
+- E2E test: critical user flows only (Playwright)
+- No snapshot tests

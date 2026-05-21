@@ -1,0 +1,50 @@
+{
+  "name": "Interview Lab",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "24" },
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.13" },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+
+  "postCreateCommand": "node scripts/bootstrap/index.js",
+  "postStartCommand": "echo '🔬 Interview Lab ready. Run: pnpm interview'",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "github.copilot",
+        "github.copilot-chat",
+        "anthropics.claude-code",
+        "eamodio.gitlens",
+        "usernamehw.errorlens",
+        "vitest.explorer",
+        "ms-playwright.playwright"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "typescript.tsdk": "node_modules/typescript/lib"
+      }
+    }
+  },
+
+  "forwardPorts": [3000, 3001, 3002, 3003, 3004, 3005, 8000],
+  "portsAttributes": {
+    "3000": { "label": "Dashboard", "onAutoForward": "openBrowser" },
+    "3001": { "label": "React Playground" },
+    "3002": { "label": "Next Playground" },
+    "3003": { "label": "Node Playground" },
+    "3004": { "label": "JS Playground" },
+    "3005": { "label": "Design System Lab" },
+    "8000": { "label": "Python Lab" }
+  }
+}

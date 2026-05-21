@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@interview-lab/ui": ["packages/ui/src/index.ts"],
+      "@interview-lab/tokens": ["packages/tokens/src/index.ts"],
+      "@interview-lab/hooks": ["packages/interview-hooks/src/index.ts"],
+      "@interview-lab/utils": ["packages/interview-utils/src/index.ts"],
+      "@interview-lab/generators": ["packages/interview-generators/src/index.ts"],
+      "@interview-lab/ai-skills": ["packages/ai-skills/src/index.ts"],
+      "@interview-lab/types": ["packages/shared-types/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules", "**/dist", "**/.next"]
+}
