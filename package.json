@@ -23,7 +23,10 @@
     "bootstrap": "node scripts/bootstrap/index.js",
     "react-round": "pnpm --filter react-machine-round dev",
     "react-round:test": "pnpm --filter react-machine-round test",
-    "react-round:storybook": "pnpm --filter react-machine-round storybook"
+    "react-round:storybook": "pnpm --filter react-machine-round storybook",
+    "next-round": "pnpm --filter next-machine-round dev",
+    "next-round:build": "pnpm --filter next-machine-round build",
+    "next-round:typecheck": "pnpm --filter next-machine-round typecheck"
   },
   "devDependencies": {
     "turbo": "^2.3.3",
