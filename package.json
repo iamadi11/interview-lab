@@ -26,7 +26,10 @@
     "react-round:storybook": "pnpm --filter react-machine-round storybook",
     "next-round": "pnpm --filter next-machine-round dev",
     "next-round:build": "pnpm --filter next-machine-round build",
-    "next-round:typecheck": "pnpm --filter next-machine-round typecheck"
+    "next-round:typecheck": "pnpm --filter next-machine-round typecheck",
+    "node-round": "pnpm --filter node-machine-round dev",
+    "node-round:test": "pnpm --filter node-machine-round test",
+    "node-round:typecheck": "pnpm --filter node-machine-round typecheck"
   },
   "devDependencies": {
     "turbo": "^2.3.3",
